@@ -1,9 +1,9 @@
-#define _GNU_SOURCE // Trigger stdio.h to include asprintf
 #include <stdio.h>
 #include <stdlib.h> // free
 #include <string.h> // strstr, strlen, strtok, size_t, NULL
 
-int main() {
+int main()
+{
     char *src = " #include stdio, stdlib, string";
     char *tok;
     src = strstr(src, "#include"); // Our psuedo ltrim...
@@ -19,5 +19,6 @@ int main() {
         printf("#include <%s.h>\n", tok);
         tok = strtok(NULL, " ,");
     }
+
     // 0 is implicitely returned on successful completion.
 }
