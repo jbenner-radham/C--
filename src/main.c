@@ -20,5 +20,5 @@ int main()
         tok = strtok(NULL, " ,");
     }
 
-    // 0 is implicitely returned on successful completion.
+    // 0 is implicitly returned on successful completion.
 }
